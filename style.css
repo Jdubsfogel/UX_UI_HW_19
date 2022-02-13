@@ -13,13 +13,9 @@ body{
     display:flex;
     align-items: center;
     justify-content: space-between;
-    outline: 1px solid blue;
-}
-
-.left, .right {
-    outline: 1px solid greenyellow;
     
 }
+
 
 .left {
     margin-left: 36px;
@@ -58,7 +54,6 @@ body{
 /* Hero Section */
 
 .herosection{
-    outline: 1px solid red;
     display: flex;
     justify-content: center;
     align-items:center;
@@ -66,12 +61,12 @@ body{
     margin-bottom: 120px;
     margin-left: 10%;
     margin-right:10%;
-    
- 
+    flex-wrap: wrap;
+     
 }
+
 .lefthero {
-    outline: 1px solid greenyellow;
-    width: 50%;
+    flex: 50%;
     text-align: start;
 
 }
@@ -81,16 +76,14 @@ body{
 }
 
 .righthero {
-    outline: 1px solid greenyellow;
     text-align: end;
-    width:50%; 
-    margin-left:15px;   
+    flex: 50%; 
+    margin-top: 20px;
 }
 
 /* Selected Work Section */
 
 .selectedWork {
-    outline: 1px solid rgb(140, 0, 255);
     margin-left:10%;
     margin-right: 10%;
     margin-top: 50px;
@@ -115,6 +108,7 @@ body{
     
 }
 
+
 .primaryCard2 {
     background-color: rgb(238, 241, 241);
     display: grid;
@@ -125,7 +119,6 @@ body{
     margin-top: 50px;
 }
 .projectDesc {
-    outline: 1px solid red;
     position: relative;
     grid-area: "description";
 }
@@ -156,19 +149,21 @@ body{
     position:absolute;
     bottom: 0px;
     margin-left:35%;
+    cursor: pointer;
 }
 
 .featureGraphic {
-    outline: 1px solid red;
     background-color: black;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-right: 20px;
     grid-area: "graphic";
+    box-shadow: 5px 10px 18px #888888;
+
 }
 
 .featureimageContainer {
-    outline: 1px solid red;
     width: 400px;
     height: 200px;
     
@@ -186,15 +181,16 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-right: 20px;
     grid-area: "graphic";
+    box-shadow: 5px 10px 18px #888888;
     
 }
 
 .vacimageContainer1 {
-    outline: 1px solid red;
     width: 78px;
     height: 168px;
-    margin-right:10px;
+  
 }
 
 .vacimageContainer1 > img {
@@ -203,7 +199,6 @@ body{
 }
 
 .vacimageContainer2 {
-    outline: 1px solid red;
     width: 337px;
     height: 194px;
 }
@@ -215,7 +210,6 @@ body{
 }
 
 .bottomDivider {
-    outline: 1px solid red;
     grid-column: 1 / 3;
     grid-row: 2;
     width: 95%;
@@ -228,7 +222,6 @@ body{
 /* Additional Projects */
 
 .additionalProjects {
-    outline: 1px solid rgb(140, 0, 255);
     margin-left:10%;
     margin-right: 10%;
     margin-top: 50px;
@@ -242,7 +235,6 @@ body{
 }
 
 .gridContainer {
-    outline: 1px solid rgb(0, 255, 34);
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
@@ -250,18 +242,11 @@ body{
     
 }
 
-.gridContainer > div {
-    outline: 1px solid rgb(0, 17, 255);
-   
-    
-}
-
-
 .additionalworkBottom  > hr {
-    outline: 3px solid red;
     width: 100%;
     margin-top: 100px; 
-    border-color: black;
+    border-color: red;
+    
 }
 
 .additionalworkBottom  > h2 {
@@ -279,28 +264,30 @@ body{
 }
 
 .newcardBackground {
+
+    box-shadow: 5px 5px 8px #888888;
     background-color: #d7d6d6;
     width: 100%;
     height: 300px;
+    cursor: pointer;
 }
 
 
 #edgovContainer1 {
-    outline: 1px solid red;
-    width: 78px;
-    height: 168px;
+    width: 105px;
+    height: 214px;
     margin-right:10px;
 }
 
 #edgovContainer1 > img {
     max-width: 100%;
     max-height: 100%;
+    
 }
 
 #edgovContainer2 {
-    outline: 1px solid red;
-    width: 337px;
-    height: 194px;
+    width: 380px;
+    height: 210px;
 }
 
 #edgovContainer2 > img {
@@ -309,10 +296,9 @@ body{
 }
 
 #fmContainer1 {
-    outline: 1px solid red;
-    width: 78px;
-    height: 168px;
-    margin-right:10px;
+    width: 120px;
+    height: 254px;
+    margin-right:20px;
 }
 
 #fmContainer1 > img {
@@ -321,10 +307,9 @@ body{
 }
 
 #fmContainer2 {
-    outline: 1px solid red;
-    width: 78px;
-    height: 168px;
-    margin-right:10px;
+    width: 120px;
+    height: 254px;
+    margin-right:20px;
 }
 
 #fmContainer2 > img {
@@ -333,10 +318,9 @@ body{
 }
 
 #fmContainer3 {
-    outline: 1px solid red;
-    width: 78px;
-    height: 168px;
-    margin-right:10px;
+    width: 120px;
+    height: 254px;
+    margin-right:20px;
 }
 
 #fmContainer3 > img {
@@ -345,10 +329,9 @@ body{
 }
 
 #jwContainer1 {
-    outline: 1px solid red;
-    width: 78px;
-    height: 168px;
-    margin-right:10px;
+    width: 120px;
+    height: 254px;
+    margin-right:20px;
 }
 
 #jwContainer1 > img {
@@ -357,10 +340,9 @@ body{
 }
 
 #jwContainer2 {
-    outline: 1px solid red;
-    width: 78px;
-    height: 168px;
-    margin-right:10px;
+    width: 120px;
+    height: 254px;
+    margin-right:20px;
 }
 
 #jwContainer2 > img {
@@ -369,10 +351,9 @@ body{
 }
 
 #jwContainer3 {
-    outline: 1px solid red;
-    width: 78px;
-    height: 168px;
-    margin-right:10px;
+    width: 120px;
+    height: 254px;
+    margin-right:20px;
 }
 
 #jwContainer3 > img {
@@ -381,9 +362,8 @@ body{
 }
 
 #exContainer {
-    outline: 1px solid red;
-    width: 240px;
-    height: 240px;
+    width: 260px;
+    height: 260px;
     margin-right:10px;
 }
 
@@ -396,7 +376,6 @@ body{
 
 .aboutSection {
     display: flex;
-    outline: 1px solid rgb(140, 0, 255);
     margin-top: 50px;
     margin-bottom: 50px;
     margin-left:10%;
@@ -406,11 +385,9 @@ body{
 }
 
 
-
 .profileimageContainer {
     width: 550px;
     height: 575px;
-    outline: 1px solid rgb(200, 255, 0);
     padding-right: 30px;
     
 }
@@ -420,10 +397,6 @@ body{
     height: 575px;
 }
 
-.bioContainer {
-    outline: 1px solid rgb(200, 255, 0);
-
-}
 
 .resumeSection {
     text-align: center;
@@ -507,20 +480,41 @@ body{
      
 }
 
+@media only screen and (max-width: 600px) {
+    .herosection {
+        margin-left: 16px;
+        margin-right: 16px;
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
 
+    .righthero {
+        text-align: start;
+        margin-top: 54px;
+    }
+
+}
 
 @media only screen and (max-width: 768px) {
+    .selectedWork, .additionalProjects {
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+
+    
+    
     .gridContainer {
         outline: 1px solid rgb(0, 255, 34);
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr;
         grid-gap: 36px;
-         
+        margin-left: 16px;
+        margin-right: 16px; 
     }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
     .primaryCard1 {
         background: red;
         display: grid;
